@@ -320,3 +320,18 @@ p{ margin:0 0 12px; }
   }
   .menu{ justify-content:flex-start; }
 }
+
+.input{
+  width:100%;
+  padding:12px 12px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#fff;
+  font-size:14px;
+  outline:none;
+}
+.input:focus{
+  border-color: rgba(199,154,43,.55);
+  box-shadow: 0 0 0 3px rgba(199,154,43,.18);
+}
+textarea.input{ resize:vertical; }
