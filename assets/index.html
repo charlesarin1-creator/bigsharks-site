@@ -6,6 +6,96 @@
   <title>BIG SHARKS LTD — A Trusted Gate to Business Investment</title>
   <link rel="stylesheet" href="assets/style.css"/>
 </head>
+  <script>
+(function(){
+  const form = document.getElementById("waitlistForm");
+  const ack  = document.getElementById("ack");
+  const exportBtn = document.getElementById("exportCsvBtn");
+
+  function refCode(){
+    const t = Date.now().toString(36).toUpperCase();
+    const r = Math.random().toString(36).slice(2,6).toUpperCase();
+    return `BS-${t}-${r}`;
+  }
+
+  function getList(){
+    try { return JSON.parse(localStorage.getItem("bigsharks_waitlist") || "[]"); }
+    catch(e){ return []; }
+  }
+
+  function setList(list){
+    localStorage.setItem("bigsharks_waitlist", JSON.stringify(list));
+  }
+
+  function toCsv(rows){
+    const esc = (s) => `"${String(s ?? "").replaceAll('"','""')}"`;
+    const headers = ["ref","fullName","email","background","interest","timestamp"];
+    const lines = [headers.map(esc).join(",")];
+    for(const row of rows){
+      lines.push(headers.map(h => esc(row[h])).join(","));
+    }
+    return lines.join("\n");
+  }
+
+  form?.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const fd = new FormData(form);
+    const fullName = (fd.get("fullName") || "").toString().trim();
+    const email    = (fd.get("email") || "").toString().trim();
+    const background = (fd.get("background") || "").toString().trim();
+    const interest = (fd.get("interest") || "").toString().trim();
+
+    if(!fullName || !email || !background){
+      ack.style.display = "block";
+      ack.innerHTML = "<b>Incomplete submission:</b> Please fill required fields.";
+      return;
+    }
+
+    const list = getList();
+    const ref = refCode();
+
+    list.push({
+      ref,
+      fullName,
+      email,
+      background,
+      interest,
+      timestamp: new Date().toISOString()
+    });
+
+    setList(list);
+
+    ack.style.display = "block";
+    ack.innerHTML =
+      `<b>Registration acknowledged.</b><br/>
+       Reference: <b>${ref}</b><br/>
+       Status: Phase 1 waitlist recorded (no contributions accepted).`;
+
+    form.reset();
+    window.location.hash = "#waitlist";
+  });
+
+  exportBtn?.addEventListener("click", () => {
+    const list = getList();
+    if(!list.length){
+      alert("No waitlist entries found on this device/browser.");
+      return;
+    }
+    const csv = toCsv(list);
+    const blob = new Blob([csv], {type:"text/csv;charset=utf-8;"});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "bigsharks-waitlist.csv";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  });
+})();
+</script>
+
 <body>
   <header class="nav">
   <div class="container">
