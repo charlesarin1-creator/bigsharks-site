@@ -1,287 +1,369 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>BIG SHARKS LTD — A Trusted Gate to Business Investment</title>
-  <meta name="description" content="BIG SHARKS LTD is a trust-first business investment platform focused on carefully vetted Nigerian SMEs. Phase 1 is Nigeria-only. No contributions are being accepted at this stage." />
-  <link rel="stylesheet" href="assets/style.css"/>
+  <meta name="description" content="BIG SHARKS LTD is a conservative, trust-first business investment gate for carefully vetted Nigerian SMEs. Phase 1 is informational and transparency-led. No contributions accepted." />
+  <meta name="theme-color" content="#0b1f3a" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BIG SHARKS LTD — A Trusted Gate to Business Investment" />
+  <meta property="og:description" content="Disciplined business investment in Nigerian SMEs. Transparency before participation. Phase 1 (Nigeria-only)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 <body>
 
-<header class="nav">
-  <div class="container">
-    <div class="brand">
-      <img src="assets/assets/fb619004-a185-49c0-b821-da94676fd661.png" alt="BIG SHARKS LTD Logo"/>
+  <!-- Risk Bar -->
+  <div class="riskbar" role="note" aria-label="Investment risk notice">
+    <div class="container riskbar-inner">
+      <div class="risk-icon" aria-hidden="true">⚠️</div>
       <div>
-        <div class="title">BIG SHARKS LTD</div>
-        <div class="small">A Trusted Gate to Business Investment</div>
-      </div>
-    </div>
-    <nav class="menu small">
-      <a href="index.html">Home</a>
-      <a href="how-it-works.html">How It Works</a>
-      <a href="vetting.html">Vetting</a>
-      <a href="reports/index.html">Reports</a>
-      <a href="#waitlist">Waiting List</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<!-- Permanent Risk Notice -->
-<section class="riskbar">
-  <div class="container">
-    <div class="riskbar-inner">
-      <span class="risk-icon">⚠</span>
-      <div>
-        <b>Investment Risk Notice:</b> All participation carries risk of total loss. Returns are not guaranteed.
-        <span class="muted">Phase 1 is informational and transparency-led.</span>
+        <strong>Investment Risk Notice:</strong> Participation carries risk of total loss. Returns are not guaranteed.
+        <strong>Phase 1 is informational and transparency-led.</strong> No contributions are being accepted at this stage.
       </div>
     </div>
   </div>
-</section>
 
-<main>
+  <!-- Header -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="BIG SHARKS LTD Home">
+        <img src="assets/logo.png" alt="BIG SHARKS LTD logo" class="brand-logo" />
+        <div class="brand-text">
+          <div class="brand-name">BIG SHARKS LTD</div>
+          <div class="brand-tag">A Trusted Gate to Business Investment</div>
+        </div>
+      </a>
 
-  <!-- HERO -->
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="nav" aria-label="Primary navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="vetting.html">Vetting</a>
+        <a href="reports/index.html">Reports</a>
+        <a href="#waitlist">Waiting List</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
   <section class="hero">
     <div class="container hero-grid">
+      <div>
+        <div class="pill" aria-label="Phase status">
+          <span class="dot" aria-hidden="true"></span>
+          <span><strong>Phase 1:</strong> Nigeria Only • Transparency before participation</span>
+        </div>
 
-      <div class="hero-left">
-        <div class="pill"><span class="dot"></span> Phase 1 — Nigeria Only</div>
-
-        <h1 class="hero-title">
-          Disciplined Business Investment in Nigerian SMEs
-        </h1>
-
+        <h1 class="hero-title">Disciplined Business Investment in Nigerian SMEs</h1>
         <p class="hero-sub">
-          BIG SHARKS LTD is a conservative, trust-first platform built to evaluate and support carefully vetted
+          BIG SHARKS LTD is a conservative, trust-first investment gate designed to evaluate and support carefully vetted
           Nigerian small and medium-sized enterprises through transparent reporting and disciplined governance.
         </p>
 
         <div class="hero-actions">
           <a class="btn" href="how-it-works.html">How it works</a>
           <a class="btn btn-ghost" href="reports/index.html">View transparency reports</a>
+          <a class="btn btn-ghost" href="#waitlist">Join waiting list</a>
         </div>
 
         <div class="hero-note">
-          <b>Status:</b> Public waiting list is open. <b>No contributions are being accepted at this stage.</b>
+          <strong>Note:</strong> Phase 1 is a public information and reporting period. <u>No contributions are accepted</u>.
         </div>
       </div>
 
-      <div class="hero-right">
-        <div class="card feature">
-          <h3>Our Doctrine</h3>
-          <p class="small">
-            We do not rush capital. We prioritize evaluation, disclosure, and discipline.
-          </p>
-          <div class="rule"></div>
-          <ul class="small clean">
-            <li><b>Trust-first</b> governance and reporting</li>
-            <li><b>Vetted</b> pilot businesses (2–3 in Phase 1)</li>
-            <li><b>Transparency</b> before participation</li>
-            <li><b>Restraint</b> over hype</li>
-          </ul>
+      <aside class="card" aria-label="At a glance">
+        <h2 style="margin:0 0 6px;color:var(--navy)">At a glance</h2>
+        <p class="muted small" style="margin-top:0">
+          We build credibility by constraints, verification, and clear public disclosure.
+        </p>
+
+        <div class="rule"></div>
+
+        <div class="small">
+          <p style="margin:0 0 10px"><strong>What we are:</strong> A gatekeeper process for disciplined SME evaluation and governance oversight.</p>
+          <p style="margin:0 0 10px"><strong>What we are not:</strong> Not a get-rich platform. Not a regulated fund. Not a guarantee of returns.</p>
+          <p style="margin:0 0 10px"><strong>Focus sectors (Phase 1):</strong> Farming, food manufacturing, logistics.</p>
+          <p style="margin:0"><strong>Pilot scope:</strong> 2–3 pilot businesses, depth over breadth.</p>
         </div>
 
-        <div class="card feature" style="margin-top:14px">
-          <h3>Phase 1 Focus</h3>
-          <p class="small" style="margin-bottom:0">
-            Farming • Food Manufacturing • Logistics
-          </p>
-        </div>
-      </div>
+        <div class="rule"></div>
 
+        <div class="note small">
+          <strong>Compliance posture:</strong> Any future participation model will be structured with legal and regulatory counsel.
+        </div>
+      </aside>
     </div>
   </section>
 
-  <!-- CHAIRMAN STATEMENT -->
+  <!-- Doctrine -->
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <h2>Chairman’s Statement</h2>
-        <p class="small muted">
-          BIG SHARKS LTD is built for long-term trust, not short-term pressure.
-        </p>
-      </div>
-
-      <div class="card">
-        <p>
-          BIG SHARKS LTD exists to create a disciplined gate to business investment — one that respects risk,
-          prioritizes verification, and communicates clearly. We will move carefully, publish transparently,
-          and protect the integrity of this platform as we identify and evaluate pilot businesses.
-        </p>
-        <p style="margin-top:18px"><b>Charles Inyam Arin</b></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW WE OPERATE -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-head">
-        <h2>How We Operate</h2>
-        <p class="small muted">A conservative process designed for clarity and accountability.</p>
+        <h2>Our Doctrine</h2>
+        <p class="muted">Restraint over hype. Verification over persuasion. Transparency over pressure.</p>
       </div>
 
       <div class="grid">
-        <div class="card">
-          <h3>1. Vet</h3>
-          <p class="small">We screen and evaluate businesses with discipline. Weak records do not pass.</p>
+        <div class="card feature">
+          <h3>Trust-first governance</h3>
+          <p class="muted small">
+            We communicate constraints clearly, disclose risks early, and publish factual updates. Trust is earned through structure.
+          </p>
+          <div class="rule"></div>
+          <ul class="clean small">
+            <li>Clear disclosures and operational limits</li>
+            <li>Disciplined evaluation and documentation</li>
+            <li>Public reporting milestones</li>
+          </ul>
         </div>
-        <div class="card">
-          <h3>2. Disclose</h3>
-          <p class="small">We document risks and decisions publicly through transparency reporting.</p>
-        </div>
-        <div class="card">
-          <h3>3. Proceed Carefully</h3>
-          <p class="small">Participation only opens after Phase 1 requirements are complete and disclosed.</p>
-        </div>
-      </div>
 
-      <div style="height:14px"></div>
+        <div class="card feature">
+          <h3>Disciplined evaluation</h3>
+          <p class="muted small">
+            Businesses must pass defined gates. Weak records do not pass. This reduces noise and protects seriousness.
+          </p>
+          <div class="rule"></div>
+          <ul class="clean small">
+            <li>Documentation and compliance checks</li>
+            <li>Financial and operational review</li>
+            <li>Management interview and site checks</li>
+          </ul>
+        </div>
 
-      <div class="note">
-        <b>Phase 1 Notice:</b> This site is live for transparency and waiting list registration. No contributions
-        are being accepted at this stage.
+        <div class="card feature">
+          <h3>Transparency-led progress</h3>
+          <p class="muted small">
+            We publish reports that describe decisions, risks, and milestones—so observers can verify how the gate works.
+          </p>
+          <div class="rule"></div>
+          <ul class="clean small">
+            <li>Weekly transparency reports</li>
+            <li>Clear risk statements</li>
+            <li>Documented governance actions</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- QUICK LINKS -->
-  <section class="section">
+  <!-- Operating Model Preview -->
+  <section class="section section-alt">
     <div class="container">
       <div class="section-head">
-        <h2>Quick Access</h2>
-        <p class="small muted">Direct links to the institutional pages.</p>
+        <h2>Operating Model (Phase 1 Preview)</h2>
+        <p class="muted">A public blueprint that answers the questions a serious, risk-aware observer asks.</p>
       </div>
 
       <div class="grid">
         <a class="card linkcard" href="how-it-works.html">
-          <h3>How It Works</h3>
-          <p class="small">Understand Phase 1 structure, restraint, and reporting.</p>
-          <span class="small">Open →</span>
+          <h3 style="margin-top:0;color:var(--navy)">Participation Framework</h3>
+          <p class="muted small">
+            What Big Sharks provides (vetting, diligence, reporting, oversight) and what it does not provide (guarantees, liquidity).
+          </p>
+          <div class="rule"></div>
+          <p class="small"><strong>Open →</strong></p>
         </a>
 
         <a class="card linkcard" href="vetting.html">
-          <h3>Vetting</h3>
-          <p class="small">Review the evaluation process and Phase 1 standards.</p>
-          <span class="small">Open →</span>
+          <h3 style="margin-top:0;color:var(--navy)">The Vetting Gate</h3>
+          <p class="muted small">
+            A clear, sequential discipline: gates, fail criteria, and why the pilot is limited to 2–3 businesses.
+          </p>
+          <div class="rule"></div>
+          <p class="small"><strong>Open →</strong></p>
         </a>
 
         <a class="card linkcard" href="reports/index.html">
-          <h3>Reports</h3>
-          <p class="small">Read weekly transparency reports, including Week 0.</p>
-          <span class="small">Open →</span>
+          <h3 style="margin-top:0;color:var(--navy)">Transparency Reports</h3>
+          <p class="muted small">
+            Public reporting that demonstrates the discipline. Week 0 explains scope, exclusions, and current status.
+          </p>
+          <div class="rule"></div>
+          <p class="small"><strong>Open →</strong></p>
         </a>
+      </div>
+
+      <div class="note small" style="margin-top:14px">
+        <strong>Phase 1 Notice:</strong> This site is live for transparency and waiting list registration.
+        <strong>No contributions are being accepted at this stage.</strong>
       </div>
     </div>
   </section>
 
-</main>
+  <!-- Chairman Statement -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Chairman’s Statement</h2>
+        <p class="muted">A corporate-first posture: institutional clarity, conservative execution, and public accountability.</p>
+      </div>
 
-<footer class="footer">
-  <div class="container small">
-    <div><b>BIG SHARKS LTD</b> • Zaria, Kaduna State, Nigeria</div>
-    <div>Email: <b>info@bigsharks.ng</b> • Phone: <b>+234 813 680 5462</b></div>
-    <div style="margin-top:10px">
-      <a href="compliance/terms.html">Terms of Service</a> •
-      <a href="compliance/privacy.html">Privacy Policy</a> •
-      <a href="compliance/risk.html">Risk Disclosure</a>
+      <div class="card">
+        <p class="small" style="margin-top:0">
+          BIG SHARKS LTD exists to create a disciplined gate to business investment—built for long-term trust, not short-term pressure.
+          We will not accept capital until the operating model, disclosures, and reporting system are defined and publicly verifiable.
+        </p>
+
+        <div class="rule"></div>
+
+        <p class="small" style="margin:0">
+          <strong>Commitment:</strong> In Phase 1, our focus is to publish the evaluation discipline, establish transparency reporting,
+          and complete the groundwork required for lawful, responsible operation in Nigeria.
+        </p>
+
+        <p class="small" style="margin:12px 0 0">
+          <strong>— Charles Inyam Arin</strong><br />
+          Chairman, BIG SHARKS LTD
+        </p>
+      </div>
     </div>
-    <div style="margin-top:10px">© BIG SHARKS LTD</div>
-  </div>
-</footer>
-<script>
-(function(){
-  const form = document.getElementById("waitlistForm");
-  const ack  = document.getElementById("ack");
-  const exportBtn = document.getElementById("exportCsvBtn");
+  </section>
 
-  function refCode(){
-    const t = Date.now().toString(36).toUpperCase();
-    const r = Math.random().toString(36).slice(2,6).toUpperCase();
-    return `BS-${t}-${r}`;
-  }
+  <!-- Waiting List -->
+  <section class="section section-alt" id="waitlist">
+    <div class="container">
+      <div class="section-head">
+        <h2>Waiting List Registration</h2>
+        <p class="muted">
+          Phase 1 is informational and transparency-led. Join the list to receive published updates and Phase 2 notices when applicable.
+        </p>
+      </div>
 
-  function getList(){
-    try { return JSON.parse(localStorage.getItem("bigsharks_waitlist") || "[]"); }
-    catch(e){ return []; }
-  }
+      <div class="grid" style="grid-template-columns:1.2fr .8fr">
+        <div class="card">
+          <form id="waitlistForm" autocomplete="on" novalidate>
+            <label class="small" for="fullName"><strong>Full Name</strong></label><br />
+            <input class="input" id="fullName" name="fullName" type="text" placeholder="Your full name" required />
+            <div class="rule"></div>
 
-  function setList(list){
-    localStorage.setItem("bigsharks_waitlist", JSON.stringify(list));
-  }
+            <label class="small" for="email"><strong>Email Address</strong></label><br />
+            <input class="input" id="email" name="email" type="email" placeholder="name@example.com" required />
+            <div class="rule"></div>
 
-  function toCsv(rows){
-    const esc = (s) => `"${String(s ?? "").replaceAll('"','""')}"`;
-    const headers = ["ref","fullName","email","background","interest","timestamp"];
-    const lines = [headers.map(esc).join(",")];
-    for(const row of rows){
-      lines.push(headers.map(h => esc(row[h])).join(","));
-    }
-    return lines.join("\n");
-  }
+            <label class="small" for="background"><strong>Professional Background</strong></label><br />
+            <select class="input" id="background" name="background" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Investor</option>
+              <option>Business Owner</option>
+              <option>Sector Professional</option>
+              <option>Observer</option>
+            </select>
+            <div class="rule"></div>
 
-  form?.addEventListener("submit", (e) => {
-    e.preventDefault();
+            <label class="small" for="interest"><strong>What interests you most about this model? (optional)</strong></label><br />
+            <textarea class="input" id="interest" name="interest" rows="4" placeholder="Transparency, discipline, SME focus, governance, etc."></textarea>
 
-    const fd = new FormData(form);
-    const fullName = (fd.get("fullName") || "").toString().trim();
-    const email    = (fd.get("email") || "").toString().trim();
-    const background = (fd.get("background") || "").toString().trim();
-    const interest = (fd.get("interest") || "").toString().trim();
+            <div class="rule"></div>
 
-    if(!fullName || !email || !background){
-      ack.style.display = "block";
-      ack.innerHTML = "<b>Incomplete submission:</b> Please fill required fields.";
-      return;
-    }
+            <button class="btn" type="submit">Join the waiting list</button>
+            <p class="muted small" style="margin:10px 0 0">
+              You will receive an on-screen acknowledgement. No automatic emails are sent in Stage 1.
+            </p>
 
-    const list = getList();
-    const ref = refCode();
+            <div id="waitlistAck" class="note small" style="display:none;margin-top:12px"></div>
+          </form>
+        </div>
 
-    list.push({
-      ref,
-      fullName,
-      email,
-      background,
-      interest,
-      timestamp: new Date().toISOString()
-    });
+        <aside class="card">
+          <h3 style="margin-top:0;color:var(--navy)">What happens next?</h3>
+          <p class="muted small">
+            The waiting list is a signal of interest, not a commitment. We publish clear updates, then expand only when structure is proven.
+          </p>
+          <div class="rule"></div>
+          <ul class="clean small">
+            <li>Phase 1: Publish discipline, reports, and governance posture</li>
+            <li>Phase 1: Pilot vetting of 2–3 businesses (depth-first)</li>
+            <li>Phase 2: Model finalization with counsel before any participation</li>
+          </ul>
 
-    setList(list);
+          <div class="rule"></div>
+          <div class="note small">
+            <strong>Reminder:</strong> This is not a regulated financial product. No returns are promised.
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
 
-    ack.style.display = "block";
-    ack.innerHTML =
-      `<b>Registration acknowledged.</b><br/>
-       Reference: <b>${ref}</b><br/>
-       Status: Phase 1 waitlist recorded (no contributions accepted).`;
+  <!-- Footer -->
+  <footer class="section">
+    <div class="container">
+      <div class="rule"></div>
+      <p class="small" style="margin:0">
+        <strong>BIG SHARKS LTD</strong> · Zaria, Kaduna State, Nigeria<br />
+        Email: <strong>info@bigsharks.ng</strong> · Phone: <strong>+234 813 680 5462</strong>
+      </p>
 
-    form.reset();
-    window.location.hash = "#waitlist";
-  });
+      <p class="small" style="margin:10px 0 0">
+        <a href="terms.html">Terms of Service</a> ·
+        <a href="privacy.html">Privacy Policy</a> ·
+        <a href="risk.html">Risk Disclosure</a>
+      </p>
 
-  exportBtn?.addEventListener("click", () => {
-    const list = getList();
-    if(!list.length){
-      alert("No waitlist entries found on this device/browser.");
-      return;
-    }
-    const csv = toCsv(list);
-    const blob = new Blob([csv], {type:"text/csv;charset=utf-8;"});
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "bigsharks-waitlist.csv";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    URL.revokeObjectURL(url);
-  });
-})();
-</script>
+      <p class="muted small" style="margin:10px 0 0">
+        © <span id="year"></span> BIG SHARKS LTD. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    (function () {
+      const btn = document.querySelector(".nav-toggle");
+      const nav = document.querySelector("#site-nav");
+      if (!btn || !nav) return;
+
+      btn.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!expanded));
+        nav.classList.toggle("open");
+      });
+    })();
+
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Waiting list acknowledgement (Stage 1: on-page only, no emails)
+    (function () {
+      const form = document.getElementById("waitlistForm");
+      const ack = document.getElementById("waitlistAck");
+      if (!form || !ack) return;
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const fullName = document.getElementById("fullName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const background = document.getElementById("background").value;
+
+        if (!fullName || !email || !background) {
+          ack.style.display = "block";
+          ack.textContent = "Please complete Full Name, Email, and Professional Background.";
+          return;
+        }
+
+        // Local acknowledgement only (no storage) — Phase 1 safe mode
+        const ref = "BS-" + Math.random().toString(16).slice(2, 8).toUpperCase();
+        ack.style.display = "block";
+        ack.innerHTML =
+          "<strong>Registration acknowledged.</strong> Your reference: <strong>" + ref + "</strong>." +
+          "<br/>Stage 1 does not send emails. Updates are published on the Reports page.";
+
+        form.reset();
+      });
+    })();
+  </script>
 
 </body>
 </html>
