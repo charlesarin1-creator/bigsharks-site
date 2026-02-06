@@ -152,6 +152,47 @@
       <p>We publish weekly transparency reports so the public can track progress clearly and calmly.</p>
       <a class="small" href="reports/week-0.html">Read Week 0 Transparency Report →</a>
     </div>
+    <section class="section section-alt" id="waitlist">
+  <div class="container">
+    <div class="section-head">
+      <h2>Waiting List Registration</h2>
+      <p class="small muted">
+        Phase 1 is informational and transparency-led. No contributions are being accepted at this stage.
+      </p>
+    </div>
+
+    <div class="card">
+      <form id="waitlistForm">
+        <label class="small"><b>Full Name</b></label><br/>
+        <input class="input" name="fullName" required placeholder="Your full name" /><br/><br/>
+
+        <label class="small"><b>Email Address</b></label><br/>
+        <input class="input" type="email" name="email" required placeholder="you@example.com" /><br/><br/>
+
+        <label class="small"><b>Professional Background</b></label><br/>
+        <select class="input" name="background" required>
+          <option value="">Select one</option>
+          <option>Investor</option>
+          <option>Business Owner</option>
+          <option>Sector Professional</option>
+          <option>Observer</option>
+        </select><br/><br/>
+
+        <label class="small"><b>What interests you most about this model? (Optional)</b></label><br/>
+        <textarea class="input" name="interest" rows="4" placeholder="Optional"></textarea><br/><br/>
+
+        <button class="btn" type="submit">Join Waiting List</button>
+        <button class="btn btn-ghost" type="button" id="exportCsvBtn">Export CSV (Admin)</button>
+
+        <div id="ack" class="note" style="display:none; margin-top:14px;"></div>
+        <p class="small muted" style="margin-top:10px;">
+          Note: This registration does not constitute an offer, invitation, or solicitation to invest.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
   </main>
 
   <footer class="footer">
